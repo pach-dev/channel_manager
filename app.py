@@ -136,7 +136,7 @@ def dash():
     channels = Channel.query.all()
     content = Comments.query.order_by(Comments.date_posted.desc()) 
 
-    return render_template('dashboard.html',  channels=channels)
+    return render_template('dashboard.html',  channels=channels, content=content)
 
 
 # Create Channel
